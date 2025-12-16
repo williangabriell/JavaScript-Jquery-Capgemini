@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+
+    <script src="jquery-3.7.1.js"></script>
+
+    <style>
+        div{
+            width: 100px;
+            height: 80px;
+            background-color: green;
+        }
+    </style>
+
+    <script>        
+        $(document).ready(function(){
+
+            $("button").click(function(){
+
+                $("div").animate({
+                    width:"400px",
+                    height:"200px",
+                });
+
+            });
+
+
+        });
+    </script>
+
+</head>
+<body>
+    
+    <button>Clique</button>
+
+    <div></div>
+
+
+</body>
+</html>
